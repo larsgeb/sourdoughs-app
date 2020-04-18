@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sourdoughs from Work Pals</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Load posts</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Welcome to Sourdoughs from Work Pals</string>
+    <string name="database_url">https://swpsourdough.herokuapp.com</string>
+    <string name="database_post_endpoint">/get-posts</string>
+</resources>
