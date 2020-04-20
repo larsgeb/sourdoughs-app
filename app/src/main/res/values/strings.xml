@@ -14,7 +14,14 @@
     <string name="channel_description">Most notifications that are not urgent</string>
     <string name="channel_ID">standard_notifications</string>
     <string name="image_content_description">Image of bread</string>
-    <string name="flour_types">All-purpose flour</string>
-    <string name="baker">You!</string>
+    <string name="defaultFlour">100% all-purpose flour</string>
+    <string name="defaultBaker">You!</string>
     <string name="button_1_text">Lekker!</string>
+    <string name="defaultBreadID">#0</string>
+    <string name="defaultImageBread">@drawable/im_bread</string>
+    <string name="crunchLabel">Crunchiness</string>
+    <string name="fluffLabel">Fluffiness</string>
+    <string name="tasteLabel">Tastiness</string>
+    <string name="prettyLabel">Prettiness</string>
+    <string name="hydrationLabel">Hydration</string>
 </resources>

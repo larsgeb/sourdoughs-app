@@ -3,4 +3,5 @@
     <color name="colorPrimary">#FF4500</color>
     <color name="colorLightStroke">#E5E5E5</color>
     <color name="appBackgroundColor">#FFFFFF</color>
+    <color name="colorHydration">#4489BF</color>
 </resources>

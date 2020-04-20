@@ -5,4 +5,6 @@
     <dimen name="shrine_toolbar_collapsed_height">40dp</dimen>
     <dimen name="shrine_toolbar_offset_start">0dp</dimen>
     <dimen name="progressBarSeparation">10dp</dimen>
+    <dimen name="progressBarWeight">1</dimen>
+    <dimen name="progressBarThickness">1dp</dimen>
 </resources>
