@@ -21,8 +21,8 @@
             android:layout_height="194dp"
             android:contentDescription="@string/image_content_description"
             android:scaleType="centerCrop"
-            android:src="@drawable/im_bread"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+            android:src="@string/defaultImageBread"
+            app:srcCompat="@drawable/im_bread" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,59 +32,116 @@
 
             <!-- Title, secondary and supporting text -->
             <TextView
-                android:id="@+id/breadListBaker"
+                android:id="@+id/breadID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/senbold"
+                android:text="@string/defaultBreadID"
                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
             <TextView
+                android:id="@+id/baker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/baker"
+                android:text="@string/defaultBaker"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="?android:attr/textColorSecondary" />
 
             <TextView
+                android:id="@+id/flour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="30dp"
-                android:text="@string/flour_types"
+                android:text="@string/defaultFlour"
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="?android:attr/textColorSecondary" />
 
+            <!-- Tastiness-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Crunch"
+                android:text="@string/tasteLabel"
                 android:textAlignment="center" />
 
             <ProgressBar
-                android:id="@+id/progressBarCrunch"
+                android:id="@+id/tasteBar"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginBottom="@dimen/progressBarSeparation"
-                android:layout_weight="1"
-                android:progress="67"
+                android:layout_weight="@dimen/progressBarWeight"
+                android:progress="65"
                 android:progressTint="@color/colorPrimary" />
 
+            <!-- Crunchiness-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Fluff"
+                android:text="@string/crunchLabel"
                 android:textAlignment="center" />
 
             <ProgressBar
-                android:id="@+id/progressBar2"
+                android:id="@+id/crunchBar"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginBottom="@dimen/progressBarSeparation"
-                android:layout_weight="1"
-                android:progress="85"
+                android:layout_weight="@dimen/progressBarWeight"
+                android:progress="25"
                 android:progressTint="@color/colorPrimary" />
+
+            <!-- Fluffiness-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fluffLabel"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/fluffBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/progressBarThickness"
+                android:layout_marginBottom="@dimen/progressBarSeparation"
+                android:layout_weight="@dimen/progressBarWeight"
+                android:progress="35"
+                android:progressTint="@color/colorPrimary" />
+
+            <!-- Prettiness-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prettyLabel"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/prettyBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/progressBarThickness"
+                android:layout_marginBottom="@dimen/progressBarSeparation"
+                android:layout_weight="@dimen/progressBarWeight"
+                android:progress="55"
+                android:progressTint="@color/colorPrimary" />
+
+            <!-- Hydration-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hydrationLabel"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:id="@+id/hydrationBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/progressBarThickness"
+                android:layout_marginBottom="@dimen/progressBarSeparation"
+                android:layout_weight="@dimen/progressBarWeight"
+                android:progress="66"
+                android:progressTint="@color/colorHydration" />
 
 
         </LinearLayout>

@@ -12,7 +12,7 @@
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="300dp"
             android:background="@color/appBackgroundColor"
             app:expandedTitleGravity="top"
             app:expandedTitleMarginEnd="0dp"
@@ -28,6 +28,18 @@
                 app:layout_collapseMode="parallax"
                 app:layout_collapseParallaxMultiplier="0.7" />
 
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/appBackgroundColor"
+            app:expandedTitleGravity="top"
+            app:expandedTitleMarginEnd="0dp"
+            app:expandedTitleMarginStart="0dp"
+            app:layout_scrollFlags="">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -36,10 +48,7 @@
                 android:textColor="@color/colorPrimary"
                 android:gravity="center"
                 android:textSize="20sp"
-                app:layout_collapseMode="parallax"
-                app:layout_collapseParallaxMultiplier="0.7"
                 />
-
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
