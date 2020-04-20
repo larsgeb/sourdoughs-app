@@ -1,3 +1,8 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="shrine_toolbar_offset_top">80dp</dimen>
+    <dimen name="shrine_toolbar_image_offset_top">80dp</dimen>
+    <dimen name="shrine_toolbar_collapsed_height">40dp</dimen>
+    <dimen name="shrine_toolbar_offset_start">0dp</dimen>
+    <dimen name="progressBarSeparation">10dp</dimen>
 </resources>
