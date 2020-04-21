@@ -1,40 +1,41 @@
 package com.example.swpsourdough;
 
-import java.util.Date;
-
 public final class BreadListItem {
 
-    String mBaker = "You!";
-    int mTaste = 10;
-    int mCrunch = 10;
-    int mFluff = 10;
-    int mPretty = 10;
-    int mHydration = 10;
-    String mFlour = "100% all-purpose flour";
-    int mID = -1;
-    Date mBakeDate;
-    String mStarter = "Yeast :(";
+  String mBaker = "You!";
+  int mTaste = 10;
+  int mCrunch = 10;
+  int mFluff = 10;
+  int mPretty = 10;
+  int mHydration = 10;
+  String mFlour = "100% all-purpose flour";
+  int mID = -1;
+  String mBakeDate;
+  String mStarter = "Yeast :(";
+  String mImageURL;
 
-    BreadListItem() {
+  BreadListItem() {
 
-    }
+  }
 
-    BreadListItem(int id) {
-        this.mID = id;
-    }
+  BreadListItem(int id) {
+    this.mID = id;
+  }
 
-    public BreadListItem(int id, String baker, int taste, int crunch, int fluff,
-                         int pretty, int hydration, String flour, Date bakeDate,
-                         String starter) {
-        this.mBaker = baker;
-        this.mTaste = taste;
-        this.mCrunch = crunch;
-        this.mFluff = fluff;
-        this.mPretty = pretty;
-        this.mHydration = hydration;
-        this.mFlour = flour;
-        this.mID = id;
-        this.mBakeDate = bakeDate;
-        this.mStarter = starter;
-    }
+  public BreadListItem(int id, String baker, int taste, int crunch, int fluff,
+      int pretty, int hydration, String flour, String bakeDate,
+      String starter, String imageURL) {
+
+    this.mBaker = baker;
+    this.mTaste = taste;
+    this.mCrunch = crunch;
+    this.mFluff = fluff;
+    this.mPretty = pretty;
+    this.mHydration = hydration;
+    this.mFlour = flour;
+    this.mID = id;
+    this.mBakeDate = bakeDate;
+    this.mStarter = starter;
+    this.mImageURL = imageURL;
+  }
 }

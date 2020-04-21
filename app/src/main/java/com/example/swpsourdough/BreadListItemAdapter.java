@@ -5,23 +5,23 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
+import com.bumptech.glide.Glide;
 import java.util.List;
 
-public class BreadListItemView
-        extends RecyclerView.Adapter<BreadListItemView.ViewHolder> {
+public class BreadListItemAdapter
+    extends RecyclerView.Adapter<BreadListItemAdapter.ViewHolder> {
 
     private List<BreadListItem> mListOfBreads;
     private LayoutInflater mInflater;
     private ItemClickListener mClickListener;
 
     // data is passed into the constructor
-    BreadListItemView(Context context, List<BreadListItem> mListOfBreads) {
+    BreadListItemAdapter(Context context, List<BreadListItem> mListOfBreads) {
         this.mInflater = LayoutInflater.from(context);
         this.mListOfBreads = mListOfBreads;
     }
@@ -46,9 +46,10 @@ public class BreadListItemView
         holder.prettyBar.setProgress(breadListItem.mPretty * 10);
         holder.crunchBar.setProgress(breadListItem.mCrunch * 10);
         holder.tasteBar.setProgress(breadListItem.mTaste * 10);
-
         holder.hydrationBar.setProgress(breadListItem.mHydration);
 
+      Glide.with(holder.headerImage.getContext()).load(breadListItem.mImageURL)
+          .into(holder.headerImage);
 
     }
 
@@ -77,6 +78,7 @@ public class BreadListItemView
             implements View.OnClickListener {
         TextView textViewID, textViewBaker, textViewFlour;
         ProgressBar fluffBar, prettyBar, crunchBar, hydrationBar, tasteBar;
+      ImageView headerImage;
 
         ViewHolder(View BreadListView) {
             super(BreadListView);
@@ -88,6 +90,7 @@ public class BreadListItemView
             crunchBar = BreadListView.findViewById(R.id.crunchBar);
             hydrationBar = BreadListView.findViewById(R.id.hydrationBar);
             tasteBar = BreadListView.findViewById(R.id.tasteBar);
+          headerImage = BreadListView.findViewById(R.id.headerImage);
 
             BreadListView.setOnClickListener(this);
         }
@@ -98,4 +101,5 @@ public class BreadListItemView
             }
         }
     }
+
 }

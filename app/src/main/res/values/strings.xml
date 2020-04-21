@@ -24,4 +24,5 @@
     <string name="tasteLabel">Tastiness</string>
     <string name="prettyLabel">Prettiness</string>
     <string name="hydrationLabel">Hydration</string>
+    <string name="loadMoreButtonText">Load more</string>
 </resources>

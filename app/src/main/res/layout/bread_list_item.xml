@@ -2,13 +2,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+  android:layout_height="wrap_content"
     android:clickable="true"
     android:paddingHorizontal="10dp"
     app:cardElevation="0dp"
-    app:cardPreventCornerOverlap="false"
     app:strokeColor="@color/colorLightStroke"
-    app:strokeWidth="0dp">
+  android:layout_marginBottom="@dimen/card_spacing"
+  app:cardCornerRadius="10dp"
+  app:strokeWidth="1dp">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,10 +19,11 @@
 
         <!-- Media -->
         <ImageView
+          android:id="@+id/headerImage"
             android:layout_width="match_parent"
-            android:layout_height="194dp"
+          android:layout_height="wrap_content"
             android:contentDescription="@string/image_content_description"
-            android:scaleType="centerCrop"
+          android:scaleType="fitCenter"
             android:src="@string/defaultImageBread"
             app:srcCompat="@drawable/im_bread" />
 

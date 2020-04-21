@@ -7,4 +7,5 @@
     <dimen name="progressBarSeparation">10dp</dimen>
     <dimen name="progressBarWeight">1</dimen>
     <dimen name="progressBarThickness">1dp</dimen>
+  <dimen name="card_spacing">25dp</dimen>
 </resources>

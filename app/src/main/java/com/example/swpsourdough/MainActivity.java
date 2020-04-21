@@ -6,16 +6,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import java.util.UUID;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -31,17 +24,17 @@ public class MainActivity extends AppCompatActivity {
         createNotificationChannel();
 
         //
-        notifyLowPriority(1234, "Breadalert!", "Heyo");
+//        notifyLowPriority(1234, "Breadalert!", "Heyo");
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, getString(R.string.loading_text),
-                        Snackbar.LENGTH_SHORT).setAction("Action", FABCallback())
-                        .show();
-            }
-        });
+//        FloatingActionButton fab = findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, getString(R.string.loading_text),
+//                        Snackbar.LENGTH_SHORT).setAction("Action", FABCallback())
+//                        .show();
+//            }
+//        });
 
     }
 
